@@ -10,7 +10,7 @@ export default function LoginForm(props) {
         <MDBContainer>
         <MDBRow>
             <MDBCol md="6">
-            <form>
+            <form action="/login" method="post">
                 <p className="h4 text-center mb-4">Sign in</p>
                 <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
                 Your email
