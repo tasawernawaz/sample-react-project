@@ -4,8 +4,10 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import "bootstrap-css-only/css/bootstrap.min.css"
 import "mdbreact/dist/css/mdb.css"
 
+
 import LoginForm from './loginForm'
 import ResetModal from './resetModal'
+import Price from './price'
 
 class App extends React.Component {
     state = {
@@ -21,6 +23,7 @@ class App extends React.Component {
   render () {
       return (
           <React.Fragment>
+            <Price />
           <LoginForm toggleModal={this.toggleModal}/>
           <ResetModal showModal={this.state.showModal} toggleModal={this.toggleModal}/>
           </React.Fragment>
